@@ -1,0 +1,32 @@
+package com.edureka;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
+public class InputOutputDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File employeeInfoFile = new File("D:\\Eclipse_Workspace\\Filehandling\\EmployeeInfo.txt");
+		InputOutputDemo demo = new InputOutputDemo();
+		demo.writeToFile(employeeInfoFile);
+
+	}
+	public void writeToFile(File fileToWrite) {
+		PrintWriter employeeInfoWriter=null;
+		try {
+			employeeInfoWriter= new PrintWriter(fileToWrite);
+			employeeInfoWriter.println("Mohan");
+			employeeInfoWriter.println("100");
+		}
+		catch(FileNotFoundException e) {
+			System.out.println("Given file not found: "+fileToWrite.getName());
+			throw new RuntimeException(e);
+		}finally {
+			employeeInfoWriter.close();
+		}
+		
+	}
+
+}

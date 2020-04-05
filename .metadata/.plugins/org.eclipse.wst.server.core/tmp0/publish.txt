@@ -1,0 +1,7 @@
+#Tomcat publish data
+#Fri Mar 13 22:41:16 IST 2020
+org.eclipse.jst.jee.server\:/binary\:D\:\\Eclipse_Workspace\\spring-mvc-demo\\WebContent\\WEB-INF\\lib\\spring-web-5.2.2.RELEASE.jar=WEB-INF/lib/spring-web-5.2.2.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\Eclipse_Workspace\\spring-mvc-demo\\WebContent\\WEB-INF\\lib\\spring-web-5.2.2.RELEASE-sources.jar=WEB-INF/lib/spring-web-5.2.2.RELEASE-sources.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\Eclipse_Workspace\\web-customer-tracker\\WebContent\\WEB-INF\\lib\\spring-web-5.2.2.RELEASE-sources.jar=WEB-INF/lib/spring-web-5.2.2.RELEASE-sources.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\Eclipse_Workspace\\web-customer-tracker\\WebContent\\WEB-INF\\lib\\spring-web-5.2.2.RELEASE.jar=WEB-INF/lib/spring-web-5.2.2.RELEASE.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\ms9.EAD\\.m2\\repository\\org\\springframework\\spring-web\\5.0.2.RELEASE\\spring-web-5.0.2.RELEASE.jar=WEB-INF/lib/spring-web-5.0.2.RELEASE.jar

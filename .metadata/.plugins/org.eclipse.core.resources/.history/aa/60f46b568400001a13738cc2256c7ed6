@@ -1,0 +1,22 @@
+package com.edureka;
+
+import java.io.File;
+import java.io.FileWriter;
+
+public class FileWriterDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File bikeInfo = new File("D:\\Eclipse_Workspace\\Filehandling\\BikeInfo.txt");
+		FileWriterDemo fileWriterDemo = new FileWriterDemo();
+		fileWriterDemo.writeFile(bikeInfo);
+	}
+	private void writeFile(File fileToWrite) throws Exception{
+		FileWriter bikeInfoWriter = new FileWriter(fileToWrite);
+		bikeInfoWriter.write("FZ");
+		bikeInfoWriter.flush();
+		bikeInfoWriter.close();
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.edureka;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class FileOutputStreamDemo {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		FileOutputStreamDemo outputstr = new FileOutputStreamDemo();
+		outputstr.writeToFile(new File("D:\\Eclipse_Workspace\\5Filehandling\\Welcome.txt"));
+
+	}
+	public void writeToFile(File file) throws IOException {
+		FileOutputStream fileOutputStr = new FileOutputStream(file);
+		fileOutputStr.write("Hello!! File Output Stream Demo".getBytes());
+		fileOutputStr.close();
+	}
+
+}

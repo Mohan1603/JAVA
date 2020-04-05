@@ -1,0 +1,77 @@
+package com.stg.student.entity;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="emptable")
+public class Employee {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="emp_id")
+	private int emp_id;
+	@Column(name="name")
+	private String name;
+	@Column(name="salary")
+	private int salary;
+	
+	public Employee() {}
+	
+	@ManyToOne(targetEntity=Department.class, cascade=CascadeType.ALL)
+	@JoinColumn(name="dept_id")
+	private Department department;
+	
+	public Employee(String name, int salary) {
+		this.name = name;
+		this.salary = salary;
+	}
+	
+	public int getEmp_id() {
+		return emp_id;
+	}
+
+	public void setEmp_id(int emp_id) {
+		this.emp_id = emp_id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+	
+
+	@Override
+	public String toString() {
+		return "Employee [emp_id=" + emp_id + ", name=" + name + ", salary=" + salary + ", dept= ]";
+	}
+
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+	
+}

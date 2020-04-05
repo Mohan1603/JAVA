@@ -1,0 +1,31 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+
+public class Test   
+{ 
+  public static void main (String args[])  
+  {  
+      String a = new String("Sharma is a good player");  
+      String b = "Sharma is a good player";  
+      if(a == b)  
+      {  
+          System.out.println("a == b");  
+      }  
+      if(a.equals(b))  
+      {  
+          System.out.println("a.equals b");  
+      }  
+      
+      List<String> name=Arrays.asList("mohan","siva","kumar");
+      name.forEach(System.out::println);
+      
+      Map<String, String> map = new HashMap<String, String>();
+      
+      map.put("A", "Mohan");
+      map.put("B", "Siva");
+      map.put("C", "Kumar");
+      
+      map.forEach((k,v) -> System.out.println(k+""+v));;
+  }  
+}

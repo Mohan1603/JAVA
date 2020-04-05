@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+	private List createArrayListDemo() {
+		
+		List<String> cars= new ArrayList<>();
+		cars.add("BMW");
+		cars.add("BENZ");
+		cars.add("AUDI");
+		
+		return cars;
+	}
+	private void printArrayListDemo(List list) {
+		Iterator listIterator= list.iterator();
+		while(listIterator.hasNext()) {
+			System.out.println("Print the values in list: "+listIterator.next());
+		}
+	}
+
+}

@@ -1,0 +1,64 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Consumer;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class Test   
+{ 
+  public static void main (String args[])  
+  {  
+      String a = new String("Sharma is a good player");  
+      String b = "Sharma is a good player";  
+      if(a == b)  
+      {  
+          System.out.println("a == b");  
+      }  
+      if(a.equals(b))  
+      {  
+          System.out.println("a.equals b");  
+      }  
+      //using list
+      List<String> name=Arrays.asList("mohan","siva","kumar");
+      name.forEach(System.out::println);
+      
+      //usng map
+      System.out.println("\nusng map");
+      Map<String, String> map = new HashMap<String, String>();
+      map.put("A", "Mohan");
+      map.put("B", "Siva");
+      map.put("C", "Kumar");
+      
+      map.forEach((k,v) -> System.out.println(k+" "+v));;
+      
+      //using Consumer
+      System.out.println("\nusing Consumer");
+      List<Integer> numberList = Arrays.asList(1,2,3,4,5);
+      Consumer<Integer> action = System.out::println;
+      numberList.stream().filter(n -> n%2 == 0).forEach(s -> System.out.println(s));
+      numberList.forEach(action);
+      
+      //Streams
+      System.out.println("\nStreams");
+      Stream<Integer> stream = Stream.of(1,2,3,4,5,6,7,8,9,0);
+      stream.forEach(System.out::println);
+      
+      //List to Stream 
+      System.out.println("\nList to Stream");
+      List<Integer> list = new ArrayList<Integer>();
+      
+      for(int i=0;i<10;i++) {
+    	  list.add(i);
+      }
+      Stream<Integer> stream1 = list.stream();
+      stream1.forEach(p -> System.out.println(p));
+      
+      //Stream to list
+      System.out.println("\nStream to list");
+      List<Integer> list1=stream.filter(n -> n%2 == 0).collect(Collectors.toList());
+      list1.forEach(System.out::println);
+  }  
+}

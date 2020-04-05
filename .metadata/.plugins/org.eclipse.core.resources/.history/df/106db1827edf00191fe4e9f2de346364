@@ -1,0 +1,32 @@
+package com.edureka;
+
+public class Helloworld {
+
+	
+	 int b=20;
+	 static int c=30;
+	
+	public synchronized void nonststic()
+	{
+		char a='d'; 
+		int v=a;
+		System.out.println("Non static method "+v+" "+b);
+	}
+	public static void staticmethod()
+	{
+		c=50;
+		System.out.println(c);
+		System.out.println("Static method");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello World!!");
+		Helloworld nonstaticobject=new Helloworld();
+		nonstaticobject.b=100;
+		Helloworld.c=60;
+		nonstaticobject.nonststic();
+		staticmethod();
+		
+	}
+
+}

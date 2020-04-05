@@ -1,0 +1,10 @@
+127.0.0.1 - - [24/Dec/2019:16:05:17 +0530] "GET / HTTP/1.1" 404 709
+0:0:0:0:0:0:0:1 - - [24/Dec/2019:16:05:19 +0530] "GET /web-customer-tracker/ HTTP/1.1" 500 17483
+0:0:0:0:0:0:0:1 - - [24/Dec/2019:16:05:32 +0530] "GET /web-customer-tracker/customer/list HTTP/1.1" 500 17483
+0:0:0:0:0:0:0:1 - - [24/Dec/2019:16:05:40 +0530] "GET /web-customer-tracker/customer/list HTTP/1.1" 500 17483
+0:0:0:0:0:0:0:1 - - [24/Dec/2019:16:06:08 +0530] "GET /web-customer-tracker/customer/list HTTP/1.1" 500 17483
+0:0:0:0:0:0:0:1 - - [24/Dec/2019:16:07:25 +0530] "GET /web-customer-tracker/customer/list HTTP/1.1" 200 103
+0:0:0:0:0:0:0:1 - - [24/Dec/2019:16:07:36 +0530] "GET /web-customer-tracker/customer/list HTTP/1.1" 200 103
+0:0:0:0:0:0:0:1 - - [24/Dec/2019:16:07:37 +0530] "GET /web-customer-tracker/customer/list HTTP/1.1" 200 103
+0:0:0:0:0:0:0:1 - - [24/Dec/2019:16:07:39 +0530] "GET /web-customer-tracker/customer/list HTTP/1.1" 200 103
+0:0:0:0:0:0:0:1 - - [24/Dec/2019:16:07:52 +0530] "GET /web-customer-tracker/customer/list HTTP/1.1" 200 119

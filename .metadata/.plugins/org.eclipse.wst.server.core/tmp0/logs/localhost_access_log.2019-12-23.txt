@@ -1,0 +1,12 @@
+127.0.0.1 - - [23/Dec/2019:00:03:05 +0530] "GET / HTTP/1.1" 404 709
+127.0.0.1 - - [23/Dec/2019:00:03:06 +0530] "GET /spring-mvc-demo/ HTTP/1.1" 200 262
+127.0.0.1 - - [23/Dec/2019:00:03:11 +0530] "GET /spring-mvc-demo/customer/showForm HTTP/1.1" 200 768
+127.0.0.1 - - [23/Dec/2019:00:03:14 +0530] "POST /spring-mvc-demo/customer/processForm HTTP/1.1" 200 949
+127.0.0.1 - - [23/Dec/2019:00:07:04 +0530] "GET /spring-mvc-demo/ HTTP/1.1" 200 262
+127.0.0.1 - - [23/Dec/2019:00:11:22 +0530] "GET /spring-mvc-demo/customer/showForm HTTP/1.1" 200 768
+127.0.0.1 - - [23/Dec/2019:00:11:40 +0530] "POST /spring-mvc-demo/customer/processForm HTTP/1.1" 200 849
+127.0.0.1 - - [23/Dec/2019:00:11:48 +0530] "POST /spring-mvc-demo/customer/processForm HTTP/1.1" 200 242
+127.0.0.1 - - [23/Dec/2019:01:12:39 +0530] "GET / HTTP/1.1" 404 709
+0:0:0:0:0:0:0:1 - - [23/Dec/2019:01:12:40 +0530] "GET /web-customer-tracker/ HTTP/1.1" 404 734
+127.0.0.1 - - [23/Dec/2019:01:15:29 +0530] "GET / HTTP/1.1" 404 709
+0:0:0:0:0:0:0:1 - - [23/Dec/2019:01:15:30 +0530] "GET /web-customer-tracker/TestDbServlet HTTP/1.1" 200 150

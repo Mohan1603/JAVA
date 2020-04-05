@@ -1,0 +1,70 @@
+package com.stg.student.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.stg.student.entity.Department;
+import com.stg.student.entity.Employee;
+import com.stg.student.service.EmployeeService;
+
+@RestController
+@RequestMapping("/api1")
+public class EmployeeRestController {
+
+	@Autowired
+	private EmployeeService employeeservice;
+	public EmployeeRestController() {
+	}
+	
+	public EmployeeRestController(EmployeeService employeeservice) {
+		super();
+		this.employeeservice = employeeservice;
+	}
+	
+	@GetMapping("/employees")
+	public List<Employee> findAll(){
+		return employeeservice.findAll();
+	}
+	
+	
+	@GetMapping("/employees/{employeeId}")
+	public Employee getEmployee(@PathVariable int employeeId)
+	{
+		Employee theEmployee= employeeservice.findById(employeeId);
+		if(theEmployee == null)
+		{
+			throw new RuntimeException("employee id not found"+employeeId);
+		}
+		return theEmployee;
+	}
+	@PostMapping("/employeesadd")
+	public Employee addEmployee(@RequestBody Employee theEmployee) {
+		theEmployee.setEmp_id(0);
+		employeeservice.save(theEmployee);
+		return theEmployee;
+	}
+	@PostMapping("/employeesave")
+	public Employee updateEmployee(@RequestBody Employee theEmployee) {
+		employeeservice.save(theEmployee);
+		return theEmployee;
+	}
+	@GetMapping("/delemployees/{employeeId}")
+	public String deleteEmployee(@PathVariable int employeeId)
+	{
+		Employee theEmployee= employeeservice.findById(employeeId);
+		if(theEmployee == null)
+		{
+			throw new RuntimeException("employee id not found"+employeeId);
+		}
+		employeeservice.deleteById(employeeId);
+		
+		return "delted employee is"+employeeId;
+	}
+}

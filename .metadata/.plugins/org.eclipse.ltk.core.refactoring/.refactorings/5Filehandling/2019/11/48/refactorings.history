@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.edureka.ObjectOutputStreamDemo&apos; to &apos;ObjectInOutStreamDemo&apos;&#x0D;&#x0A;- Original project: &apos;Filehandling&apos;&#x0D;&#x0A;- Original element: &apos;com.edureka.ObjectOutputStreamDemo&apos;&#x0D;&#x0A;- Renamed element: &apos;com.edureka.ObjectInOutStreamDemo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ObjectOutputStreamDemo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.edureka{ObjectOutputStreamDemo.java[ObjectOutputStreamDemo" matchStrategy="1" name="ObjectInOutStreamDemo" qualified="false" references="true" similarDeclarations="false" stamp="1574872483419" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,8 @@
+package com.edureka;
+
+public class Credit extends Debit {
+	/*
+	  public void operation() {
+		  System.out.println("Amount has been Credited"); 
+		  }*/
+}

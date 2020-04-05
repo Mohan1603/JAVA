@@ -1,0 +1,24 @@
+package com.edureka;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class FileInputStreamDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FileInputStreamDemo inputStrDemo = FileInputStreamDemo();
+		inputStrDemo.fileToRead("D:\\Eclipse_Workspace\\Filehandling\\BikeInfo.txt");
+		
+	}
+	private void fileToRead(File read) throws IOException {
+		FileInputStream inputStr = new FileInputStream(read);
+		int readFromFile;
+		while((readFromFile=inputStr.read())!=-1) {
+			System.out.println("Character read from File is: "+(char)readFromFile);
+		}
+	}
+
+}
