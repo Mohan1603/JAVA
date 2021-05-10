@@ -9,7 +9,7 @@ import com.sample.myapp.dao.EmployeeDAO;
 import com.sample.myapp.entity.Employee;
 
 @Service
-public class StudentServiceImp implements EmployeeService {
+public class EmployeeServiceImp implements EmployeeService {
 	
 	@Autowired
 	EmployeeDAO dao;
